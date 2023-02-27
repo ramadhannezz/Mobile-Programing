@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="10dp"
+    android:paddingTop="80dp">
+
+
+    <!-- Logo Image View -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="326dp"
+        android:layout_height="174dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/sharinggan" />
+
+    <!-- Username EditText -->
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoImageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/abu"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="16dp"
+        android:hint="Masukan Username/Email"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameEditText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/abu"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="16dp"
+        android:hint="Masukan Password"
+        android:inputType="textPassword"
+        android:padding="16dp" />
+
+    <!-- Login Button -->
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+        android:text="Masuk" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="19dp"
+        android:layout_centerHorizontal="true"
+        android:text="Daftar"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
